@@ -1,2 +1,2 @@
-# journal
-A journal tracking my progress on learning how to program
+# J14MP
+This repository serves as a journal to log important events, notes, insights, etc., related to programming.
