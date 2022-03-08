@@ -10,4 +10,8 @@ This repository serves as a journal to log important events, notes, insights, et
 | Python| *Automate the Boring Stuff* by Al Sweigart | Not Finished |
 | Python | *Object Oriented Python* by Irv Kalb | Started |
 
+## Codecademy Progress
+| Course | Progress |
+|---|---|
+|Learn Python 3 | 40% Completed |
 
