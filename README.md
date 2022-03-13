@@ -13,5 +13,6 @@ This repository serves as a journal to log important events, notes, insights, et
 ## Codecademy Progress
 | Course | Progress |
 |---|---|
-|Learn Python 3 | 91% Completed |
+|Learn Python 3 | Finished |
+|Learn Intermediate Python 3 | 0% |
 
