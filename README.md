@@ -14,5 +14,5 @@ This repository serves as a journal to log important events, notes, insights, et
 | Course | Progress |
 |---|---|
 |Learn Python 3 | Finished |
-|Learn Intermediate Python 3 | 29% |
+|Learn Intermediate Python 3 | 43% |
 
