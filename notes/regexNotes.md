@@ -42,3 +42,7 @@ print(mo.group(2)) #Will print '330-3330'
 print(mo.group(0)) #Will print '233-330-3330'
 print(mo.group()) #Same as mo.group(0)
 ```
+* **mo.groups** returns a tuple of multiple values. You can assign them to variables by unpacking
+```python
+var1, var2 = mo.groups()
+```
