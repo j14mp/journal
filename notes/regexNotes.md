@@ -24,7 +24,6 @@ phoneRegex = re.compile(r'\d{3}-\d{3}-\d{4}')
 mo = phoneNumRegex.search('My number is 230-220-3330')
 print('Phone number found: ' + mo.group())
 ```
-<br>  
 
 #### Review: Basic Regex
 1. Import regex module using **import re**
