@@ -73,5 +73,31 @@ blahRegex2 = re.compile(r'(blah){, 5}') # Will find 0 to 5 instances of 'blah' g
 blahRegex3 = re.compile(r'(blah){3, }') # Will find 0 to x instances of 'blah' group
 ```
 * A question mark has two meanings in regex: To declare non-greedy match or to flag optional groups
-
-
+* The **search()** method will return a Match object the first matched text of a string. The **findall()** method will return all matches as strings in a list - as long as there are no groups. If there are groups, findall() will return a list of strings in tuples.
+```python
+phoneNumRegex = re.compile(r'\d{3}-\d{3}-\d{4}')
+phoneNumRegex.findall('Cell: 425-555-5555 Work: 555-555-5555') #Will return a list
+```
+* Create character classes by using square brackets. For example, \[aeiouAEIOU\] will match all vowel occurences. Add a caret **^** right after the opening bracket to make a negative character class. For example, \[^aeiouAEIOU\] will match all characters that are NOT vowels.
+```python
+vowelRegex = re.compile(r'[aeiouAEIOU])
+vowelRegex.findall('I am the Batman') # should return a list of values
+```
+* You can use the caret symbol at the start of a pattern to signal that a string must begin with that pattern. You can use the dollar symbol to signify that a string must end with that pattern.
+```python
+startsWithSuper = re.compile(r'^Super') #returns Match only if string starts with 'Super'
+endsWithDuper = re.compile(r'Duper$') #returns Match only if string ends with 'Duper'
+```
+* A dot **\.** character represents any character that is not a newline. Using the regex pattern .* will match everything up to a newline.
+* Enter **re.IGNORECASE or re.I** as a second argument to **search() or findall()** to make the regex case insensitive.
+```python
+vowelRegex = re.compile(r'[aeiou]', re.I)
+vowelRegex.findall('HOLY CRAP - is that Batman?') # Should return a list [O, A, i... etc.]
+```
+* Use the **sub()** method to replace a pattern with something else.
+```python
+scpRegex = re.compile(r'SCP \d+-?\d*')
+scpRegex.sub('REDACTED', 'SCP 2412 was last seen escaping the facility with SCP 2412-1')
+#Should replace 'SCP 2412' and 'SCP 2412-1' with 'REDACTED'
+```
+* Pass **re.VERBOSE** as a second argument to re.compile for complicated regex. Verbose mode ignores comments and whitespace inside regex strings. **See page 178**
