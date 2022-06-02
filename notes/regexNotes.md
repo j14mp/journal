@@ -78,6 +78,7 @@ phoneNumRegex = re.compile(r'\d{3}-\d{3}-\d{4}')
 phoneNumRegex.findall('Cell: 425-555-5555 Work: 555-555-5555') #Will return a list
 ```
 * Create character classes by using square brackets. For example, \[aeiouAEIOU\] will match all vowel occurences. Add a caret **^** right after the opening bracket to make a negative character class. For example, \[^aeiouAEIOU\] will match all characters that are NOT vowels.
+* **You do not need to escape characters such as \., \*, \?, or \(\) when creating character classes**.
 ```python
 vowelRegex = re.compile(r'[aeiouAEIOU])
 vowelRegex.findall('I am the Batman') # should return a list of values
