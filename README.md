@@ -8,7 +8,7 @@ This repository serves as a journal to log important events, notes, insights, et
 | --- | --- | ---|
 | Python| *Python Crash Course* by Eric Matthes | Finished |
 | Python| *Automate the Boring Stuff* by Al Sweigart | Started |
-| Python | *Object Oriented Python* by Irv Kalb | Started |
+| Python | *Object Oriented Python* by Irv Kalb | Not started |
 
 ## Codecademy Progress
 | Course | Progress |
