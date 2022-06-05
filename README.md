@@ -1,7 +1,7 @@
 # J14MP Journal
 This repository serves as a journal to log important events, notes, insights, etc., related to programming.
 
-## Books to Read
+## PYTHON
 
 #### Beginner Books
 | Language | Book | Status |
