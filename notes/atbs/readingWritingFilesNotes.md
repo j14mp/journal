@@ -1,4 +1,5 @@
 # Reading and Writing Files Notes
+## Paths
 Notes on reading and writing files taken from the book 'Automate the Boring Stuff' by Al Sweigart.
 Chapter 9, page 202
 <br>
@@ -25,4 +26,8 @@ os.makedirs('C:\\diet\\coke\zero') # Will create any directories that do not exi
 from pathlib import Path
 Path(r'C:\sodas\brands\flavors').mkdir() #This will only create the 'flavors' directory
 ```
-
+* **os.path.getsize(path)** will return the byte size of a file in the path argument
+*  **os.listdir(path)** will return a list of filenames as strings
+* See page 213 for an explanation on glob patterns.
+* Check path validity using pathObj.exists(), pathObj.is_file(), or pathObj.is_dir(), where pathObj is a path object.
+## Opening, reading, and writing files
